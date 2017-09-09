@@ -1,14 +1,13 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import de.fhdo.germeval.modelling.transformers._
-import de.hoevelmann.bachelorthesis.modelling.transformers.{SdCrossValidatorModel, _}
 import org.apache.log4j.{Level, Logger}
-import org.apache.spark.ml.{Estimator, Pipeline}
 import org.apache.spark.ml.classification._
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.feature._
 import org.apache.spark.ml.linalg.Vectors
 import org.apache.spark.ml.tuning.ParamGridBuilder
+import org.apache.spark.ml.{Estimator, Pipeline}
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 import scala.io.Source

@@ -1,11 +1,11 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import org.apache.spark.ml.clustering.KMeans
 import org.apache.spark.ml.linalg._
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.{Row, SparkSession}
 import org.apache.spark.sql.catalyst.expressions.GenericRowWithSchema
 import org.apache.spark.sql.types._
+import org.apache.spark.sql.{Row, SparkSession}
 
 
 /**

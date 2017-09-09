@@ -1,15 +1,12 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import com.intel.analytics.bigdl.utils.Engine
 import de.fhdo.germeval.modelling.classifiers.LSTMClassifier
 import de.fhdo.germeval.modelling.transformers.{NonAveragedWord2Vec, RowPruner, VectorSequencer}
-import de.hoevelmann.bachelorthesis.modelling.entities.ConfusionMatrix
-import de.hoevelmann.bachelorthesis.modelling.transformers.{NonAveragedWord2Vec, RowPruner, VectorSequencer}
-import org.apache.log4j.Logger
 import org.apache.spark.api.java.function.FilterFunction
+import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.feature.Word2Vec
 import org.apache.spark.ml.linalg.{Vector, Vectors}
-import org.apache.spark.ml.{Pipeline, linalg}
 import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 
 import scala.io.Source

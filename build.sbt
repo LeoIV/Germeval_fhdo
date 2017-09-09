@@ -5,10 +5,6 @@ version := "0.1"
 
 scalaVersion := "2.11.11"
 
-resolvers += Resolver.mavenLocal
-resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
-
-
 // we need this configuration to make the languagetool work
 assemblyMergeStrategy in assembly := {
   case PathList("META-INF", xs@_*) =>
@@ -30,7 +26,6 @@ test in assembly := {}
 
 libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.2.0"
 libraryDependencies += "org.apache.spark" % "spark-mllib_2.11" % "2.2.0"
-//libraryDependencies += "org.apache.spark" % "spark-my-mllib_2.11" % "2.1.2-SNAPSHOT"
 libraryDependencies += "org.apache.spark" % "spark-sql_2.11" % "2.2.0"
 libraryDependencies += "org.apache.spark" % "spark-streaming_2.11" % "2.2.0"
 libraryDependencies += "org.apache.spark" % "spark-streaming_2.11" % "2.2.0"

@@ -1,9 +1,8 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import java.io.FileWriter
 
 import de.fhdo.germeval.modelling.transformers.{FastTextClassifier, FastTextSentenceVector, GermanStemmer, SentimentLexicon}
-import de.hoevelmann.bachelorthesis.modelling.transformers._
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.classification.{GBTClassifier, OneVsRest}

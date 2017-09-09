@@ -1,4 +1,4 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import java.io.FileWriter
 

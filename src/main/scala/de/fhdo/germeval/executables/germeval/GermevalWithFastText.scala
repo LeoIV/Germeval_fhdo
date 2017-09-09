@@ -1,12 +1,10 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
-import de.fhdo.germeval.modelling.entities.ConfusionMatrix
 import de.fhdo.germeval.modelling.transformers.{FastTextClassifier, GermanStemmer, SdCrossValidator}
-import de.hoevelmann.bachelorthesis.modelling.transformers.{FastTextClassifier, GermanStemmer, SdCrossValidator}
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.linalg.Vectors
-import org.apache.spark.ml.tuning.{CrossValidator, ParamGridBuilder}
+import org.apache.spark.ml.tuning.ParamGridBuilder
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 import scala.io.Source
@@ -16,14 +14,6 @@ object GermevalWithFastText {
 
   /**
     * Execute the Germeval task
-    *
-    * @param spark              the SparkSession
-    * @param ngramSize          size of the n-grams (default: 1)
-    * @param numFeatures        number of features, that will be selected (default: 1000), set to zero if you want to disable the feature selection
-    * @param intermediateLayers the hidden layers of the multilayer perceptron (default: Array(300))
-    * @param useLIWCFeatures    should we use the liwc-features (default: true)
-    * @param stem               should we stem the words (default: true)
-    * @param numIterations      number of iterations (default: 100)
     */
   def main(args: Array[String]): Unit = {
     val spark: SparkSession = SparkSession.builder().master("local[*]").getOrCreate()
@@ -92,9 +82,9 @@ object GermevalWithFastText {
     println("fitted relevance models")
 
     println("sentiment fasttext: " + sentimentModel.allMetrics.toList)
-    println("\taverage: "+sentimentModel.average)
+    println("\taverage: " + sentimentModel.average)
     println("relevance fasttext : " + relevanceModel.allMetrics.toList)
-    println("\taverage: "+relevanceModel.average)
+    println("\taverage: " + relevanceModel.average)
 
   }
 

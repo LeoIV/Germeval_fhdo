@@ -1,7 +1,6 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import de.fhdo.germeval.modelling.transformers._
-import de.hoevelmann.bachelorthesis.modelling.transformers._
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.classification._

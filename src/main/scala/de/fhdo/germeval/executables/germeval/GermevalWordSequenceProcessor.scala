@@ -1,4 +1,4 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 /**
   * Created by Leonard Hövelmann (leonard.hoevelmann@adesso.de) on 11.07.2017.

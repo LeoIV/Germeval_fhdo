@@ -2,7 +2,7 @@ package de.fhdo.germeval.worksheets
 
 import java.io.FileWriter
 
-import de.hoevelmann.bachelorthesis.executables.germeval.GermevalWordSequenceProcessor
+import de.fhdo.germeval.executables.germeval.GermevalWordSequenceProcessor
 
 import scala.io.Source
 

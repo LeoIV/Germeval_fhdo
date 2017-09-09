@@ -1,14 +1,13 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import de.fhdo.germeval.modelling.transformers.{FastTextSentenceVector, LanguageToolTransformer, SdCrossValidator, SentimentLexicon}
-import de.hoevelmann.bachelorthesis.modelling.transformers.{LanguageToolTransformer, SdCrossValidator, SentimentLexicon}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.classification._
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.feature._
 import org.apache.spark.ml.linalg.Vectors
-import org.apache.spark.ml.tuning.{CrossValidator, ParamGridBuilder}
+import org.apache.spark.ml.tuning.ParamGridBuilder
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
 import scala.io.Source

@@ -1,4 +1,4 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import de.fhdo.germeval.modelling.entities.ConfusionMatrix
 import org.apache.spark.ml.Pipeline

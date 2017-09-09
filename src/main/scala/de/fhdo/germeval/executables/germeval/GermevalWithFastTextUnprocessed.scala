@@ -1,4 +1,4 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
 import de.fhdo.germeval.modelling.transformers.{FastTextClassifier, GermanStemmer, SdCrossValidator}
 import de.hoevelmann.bachelorthesis.modelling.transformers.{FastTextClassifier, GermanStemmer}

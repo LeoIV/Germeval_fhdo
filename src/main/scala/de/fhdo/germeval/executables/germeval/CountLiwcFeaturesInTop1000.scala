@@ -1,11 +1,7 @@
-package de.hoevelmann.bachelorthesis.executables.germeval
+package de.fhdo.germeval.executables.germeval
 
-import java.io.FileWriter
-
+import de.fhdo.germeval.executables.germeval.FinalSubmissionCV.Review
 import de.fhdo.germeval.modelling.transformers.GermanStemmer
-import de.hoevelmann.bachelorthesis.executables.germeval.FinalSubmission.loadReviews
-import de.hoevelmann.bachelorthesis.executables.germeval.FinalSubmissionCV.{Review, loadReviews}
-import de.hoevelmann.bachelorthesis.modelling.transformers.GermanStemmer
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.feature._
