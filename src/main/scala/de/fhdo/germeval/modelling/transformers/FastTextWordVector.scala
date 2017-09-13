@@ -1,16 +1,12 @@
 package de.fhdo.germeval.modelling.transformers
 
-import java.io.FileWriter
-
 import de.fhdo.germeval.modelling.fasttext.FastText
-import de.hoevelmann.bachelorthesis.modelling.fasttext.FastText
-import org.apache.spark.ml.{Transformer, linalg}
+import org.apache.spark.ml.Transformer
 import org.apache.spark.ml.linalg.SQLDataTypes._
 import org.apache.spark.ml.linalg.Vectors
 import org.apache.spark.ml.param.{Param, ParamMap}
 import org.apache.spark.ml.util.{DefaultParamsWritable, Identifiable}
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql
 import org.apache.spark.sql.catalyst.expressions.GenericRowWithSchema
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}

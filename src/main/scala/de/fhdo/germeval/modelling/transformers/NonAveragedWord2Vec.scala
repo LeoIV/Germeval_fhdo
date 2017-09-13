@@ -1,7 +1,6 @@
 package de.fhdo.germeval.modelling.transformers
 
 import de.fhdo.germeval.modelling.entities.{FastTextVPTree, FastTextVector}
-import de.hoevelmann.bachelorthesis.modelling.entities.{FastTextVPTree, FastTextVector}
 import org.apache.spark.ml.feature.Word2VecModel
 import org.apache.spark.ml.linalg.SQLDataTypes._
 import org.apache.spark.ml.linalg.Vectors

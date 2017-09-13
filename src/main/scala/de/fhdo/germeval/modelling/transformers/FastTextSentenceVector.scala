@@ -1,10 +1,7 @@
 package de.fhdo.germeval.modelling.transformers
 
 import de.fhdo.germeval.modelling.fasttext.FastText
-import de.hoevelmann.bachelorthesis.modelling.fasttext.FastText
 import org.apache.spark.ml.linalg.SQLDataTypes._
-import org.apache.spark.ml.linalg.Vectors
-import org.apache.spark.ml.param.Param
 import org.apache.spark.ml.util.Identifiable
 import org.apache.spark.ml.{UnaryTransformer, linalg}
 import org.apache.spark.sql.types.DataType

@@ -1,7 +1,6 @@
 package de.fhdo.germeval.modelling.transformers
 
 import de.fhdo.germeval.modelling.entities.{FastTextVPTree, FastTextVector}
-import de.hoevelmann.bachelorthesis.modelling.entities.{FastTextVPTree, FastTextVector}
 import org.apache.spark.ml.UnaryTransformer
 import org.apache.spark.ml.param.{DoubleParam, Param}
 import org.apache.spark.ml.util.{DefaultParamsWritable, Identifiable}

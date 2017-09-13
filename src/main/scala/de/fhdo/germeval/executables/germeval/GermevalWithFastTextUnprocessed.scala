@@ -1,7 +1,6 @@
 package de.fhdo.germeval.executables.germeval
 
 import de.fhdo.germeval.modelling.transformers.{FastTextClassifier, GermanStemmer, SdCrossValidator}
-import de.hoevelmann.bachelorthesis.modelling.transformers.{FastTextClassifier, GermanStemmer}
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.ml.linalg.Vectors
